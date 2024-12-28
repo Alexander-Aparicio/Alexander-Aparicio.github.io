@@ -1,7 +1,7 @@
 import { artic, button, div, enlace, figc, figure, image, parrafo } from "../components/helpers/Boxes.js"
 import { SubTitlesOfPages, TitleOfPages } from "../components/helpers/Titles.js"
 
-const Webs = ()=>{
+const Suscripcion = ()=>{
 
     const d = document
 
@@ -12,17 +12,15 @@ const Webs = ()=>{
 // -------------------BANNER-----------------------
 
     const banner = div('banner-design boxOne')
-    const title = TitleOfPages('TU PÁGINA WEB','h1 title')
+    const title = TitleOfPages('SUBCRIPCIONES','h1 title')
     const description = parrafo('description p text','')
 
     const contentDescription = `
-    Diseñado pensando en quién es tu cliente.<br><br>
-    Construimos sitios web optimizados para los buscadores como Google.<span>&#160;</span> <br><br>
-    Te regalamos una estrategía para posicionarte. 
+    Si estás comenzando te regalamos una clase de muestra y si ya tienes experiencia una sesión de entrenamiento, para ello realizas una pre-inscripción llenando un formulario y luego de recibir tu clase o sesión de entrenamiento decides si tu inscripción. 
     `
     description.innerHTML = contentDescription
 
-    const imageBanner = image('diseño web','app/assets/style-webs/mentor.png', 'img')
+    const imageBanner = image('diseño web','app/assets/style-webs/8_academia.jpg', 'img')
 
     banner.appendChild(title)
     banner.appendChild(description)
@@ -30,54 +28,115 @@ const Webs = ()=>{
 
     // --------------------POST ONE-------------------------
 
-    const postOne = div('boxOne')
+    const postOne = div('boxOneTaller')
 
-    const postOneSubtitleOne = SubTitlesOfPages('¿Qué tipos de diseños te ofrecemos?','h2 title')
+    const postOneSubtitleOne = SubTitlesOfPages('Subcripciones para Taller de Verano','h2 title')
 
     const postOneTextOne = parrafo('p text','')
 
     const postOneText1 = `
-    Te ofrecemos diseños que están orientados al SEO es decir ayudarán  
-    para que tu página web pueda competir por los primeros lugares cuando alguién busca 
-    en Google algo relacionado a tus servicios o productos.
-    <br> Nos interesa que los diseños sean bonitos pero no buscamos competir en 
-    ello sino en que logren el objetivo más preciado por nuestros clientes, que 
-    sean utiles para generar ganancias.
+    Nuestro taller de verano está dirigido para niños y adolescentes que desean conocer y aprender los aspectos técnicos básicos del tenis de mesa de una manera divertida.
+    <br><br>
     `
     postOneTextOne.innerHTML = postOneText1
 
-    const imgPostOne = image('diseño web','app/assets/my-design.png','img')
-
-    const postOneTextTwo = parrafo(
-        'p nota text',
-        ''
-    )
-    const textText = `
-    <strong class="bold">NOTA:</strong> “Las páginas web con mayor cantidad de visitas no son las más bonitas sino las más útiles“.
+    const postOneText2 = `
+    Modalidad 2 veces por semana:<br><br>
+    ☀ INICIO : 7 de enero<br>
+    🏁 FIN : 27 de febrero<br>
+    🏓 16 Clases (Enero y Febrero)<br>
+    ✅ Clases de 1 hora.<br>
+    ✅ Se prestan raquetas.<br>
+    👉 Costo por todo el taller:<br>
+    💥 S/ 260.00 <br>
     `
+    const postOneTextTwo = parrafo('p text','')
+    postOneTextTwo.innerHTML = postOneText2
 
-    postOneTextTwo.innerHTML = textText
+    const postOneText3 = `
+    Modalidad 3 veces por semana:<br><br>
+    ☀ INICIO : 6 de enero<br>
+    🏁 FIN : 28 de febrero<br>
+    🏓 24 Clases (Enero y Febrero)<br>
+    ✅ Clases de 1 hora.<br>
+    ✅ Se prestan raquetas.<br>
+    👉 Costo por todo el taller:<br>
+    💥 S/ 300.00 <br>
+    `
+    const postOneTextThree = parrafo('p text','')
+    postOneTextThree.innerHTML = postOneText3
+
+
+    const imgPostOne = image('diseño web','app/assets/style-webs/42_academia.jpg','img')
+    const postOneTextFour = parrafo('p text nota','')
+    const textText = `
+    <br><strong class="bold">NOTA:</strong> “🔥 Obtén el 10% de descuento si se inscribe hasta el 31 de diciembre“.
+    `
+    const postForm = div('formulario')
+    postOneTextFour.innerHTML = textText
+
+    postForm.innerHTML = `
+    <iframe height='500px' width='100%' frameborder='0' allowTransparency='true' scrolling='auto' src='https://creatorapp.zohopublic.com/revolutionsports/academia/form-embed/Inscripciones_Taller_de_Verano/NgnMVwmsT1gA74KhyQrX8F0WeqH8WCsFkEu26e0yfJaM2r4h5DvHDpfOUnE69R9KXQJjW9eguEEenvukdaqvAC1wyfRQ8CHuV0Ct'></iframe>
+    `
 
     postOne.appendChild(postOneSubtitleOne)
     postOne.appendChild(postOneTextOne)
     postOne.appendChild(imgPostOne)
     postOne.appendChild(postOneTextTwo)
-
+    postOne.appendChild(postOneTextThree)
+    postOne.appendChild(postOneTextFour)
+    //postOne.appendChild(postForm)
 
     // --------------------POST TWO-------------------------------
 
-    const postTwo = div('boxGallery')
+    const postTwo = div('boxOneTaller')
 
-    const postTwoSubtitleOne = SubTitlesOfPages('¿Qué tipos de páginas web te ofrecemos?','h2 title')
+    const postTwoSubtitleOne = SubTitlesOfPages('Subcripciones Academia','h2 title')
 
     const postTwoTextOne = parrafo('p','')
 
     const postTwotext1 = `
-    Blogs -
-    Catálogos -
-    Tiendas -
-    Aplicaciones web.
+    La academia está orientado al aprendizaje técnico para aquellas personas que están empezando en el tenis de mesa y para los que ya cuentan con experiencia y una base técnica nos centramos en mejorar su juego perfeccionando sus habilidades. Nos preocupamos por brindar un buen ambiente para que te sientas cómodo y la pases genial con nosotros. 
+    <br><br>
     `
+    postTwoTextOne.innerHTML = postTwotext1
+
+    const postTwoTextTwo = parrafo('p','')
+    const postTwotext2 = `
+    🏓<strong class="bold">SUSCRIPCIÓN BÁSICA</strong><br>
+    📣Características:<br>
+    ✅No hay recuperación de clases por inasistencia.<br>
+    ✅Ranking con costo de 5 soles.<br>
+    👉Precios mensuales:<br>
+    💥4 clases S/125<br>
+    💥8 clases S/185<br>
+    💥12 clases S/245<br>
+    💥16 clases S/285<br>
+    `
+    postTwoTextTwo.innerHTML = postTwotext2
+
+    const postTwoTextThree = parrafo('p','')
+    const postTwotext3 = `
+    🏓<strong class="bold">SUSCRIPCIÓN PREMIUM</strong><br>
+    📣Características:<br>
+    ✅Puedes extender 1 semana el período de suscripción.<br>
+    ✅Puedes recuperar clases por inasistencia.<br>
+    ✅Ranking gratuito.<br>
+    👉Precios mensuales:<br>
+    💥4 clases S/140<br>
+    💥8 clases S/200<br>
+    💥12 clases S/260<br>
+    💥16 clases S/300<br>
+    `
+    postTwoTextThree.innerHTML = postTwotext3
+
+    const postTwoTextFour = parrafo('p nota','')
+    const postTwotext4 = `
+    La suscripción es por una cantidad de clases que debes consumir en un período mensual, tú defines tu horario pero puedes consumir todas tus clases antes de terminar el período de 30 días previa coordinación con el profesor.<br><br>
+    <strong class="bold">NOTA:</strong> Aceptamos pago por Yape, Plin, transferencia y tarjeta de crédito.
+    `
+    postTwoTextFour.innerHTML = postTwotext4
+
     const galleryWebs = div('gallery')
 
     const cards = [
@@ -118,11 +177,13 @@ const Webs = ()=>{
 
     galleryWebs.appendChild(gallery)
 
-    postTwoTextOne.innerHTML = postTwotext1
+    
 
     postTwo.appendChild(postTwoSubtitleOne)
     postTwo.appendChild(postTwoTextOne)
-    postTwo.appendChild(galleryWebs)
+    postTwo.appendChild(postTwoTextThree)
+    postTwo.appendChild(postTwoTextTwo)
+    postTwo.appendChild(postTwoTextFour)
 
     // -------------------POST THREE-------------------------------
 
@@ -159,9 +220,9 @@ const Webs = ()=>{
     const imgWordpress = image('dashboard','app/assets/style-webs/theme.png','img')
 
 
-    boxOnePostThree.appendChild(postThreeSubtitleTwo)
-    boxOnePostThree.appendChild(postThreeTextTwo)
-    boxOnePostThree.appendChild(imgWordpress)
+    //boxOnePostThree.appendChild(postThreeSubtitleTwo)
+    //boxOnePostThree.appendChild(postThreeTextTwo)
+    //boxOnePostThree.appendChild(imgWordpress)
     // ---
 
     const boxTwoPostThree = artic('webAmedida boxTwo')
@@ -181,15 +242,15 @@ const Webs = ()=>{
 
     const imgReact = image('logo','app/assets/svg/react-fondo.svg','img App-logo')
 
-    boxTwoPostThree.appendChild(postThreeSubtitleThree)
-    boxTwoPostThree.appendChild(postThreeTextThree)
-    boxTwoPostThree.appendChild(imgReact)
+    //boxTwoPostThree.appendChild(postThreeSubtitleThree)
+    //boxTwoPostThree.appendChild(postThreeTextThree)
+    //boxTwoPostThree.appendChild(imgReact)
     // ---- 
 
-    postThree.appendChild(postThreeSubtitleOne)
-    postThree.appendChild(postThreeTextOne)
-    postThree.appendChild(boxOnePostThree)
-    postThree.appendChild(boxTwoPostThree)
+    //postThree.appendChild(postThreeSubtitleOne)
+    //postThree.appendChild(postThreeTextOne)
+    //postThree.appendChild(boxOnePostThree)
+    //postThree.appendChild(boxTwoPostThree)
 
 
     // ----------------------------POST FOUR-------------------------
@@ -224,10 +285,10 @@ const Webs = ()=>{
     design.appendChild(postOne)
     design.appendChild(postTwo)
     design.appendChild(postThree)
-    design.appendChild(postFour)
+    //design.appendChild(postFour)
 
     return design
 
 }
 
-export { Webs }
+export { Suscripcion }

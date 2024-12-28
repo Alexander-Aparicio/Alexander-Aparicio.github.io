@@ -1,10 +1,10 @@
-import { Contacto } from "../pages/Contacto.js"
+import { Blog } from "../pages/Blog.js"
 import { Inicio } from "../pages/Inicio.js"
-import { Webs } from "../pages/Webs.js"
-import { Optimization } from "../pages/Optimization.js"
+import { Suscripcion } from "../pages/Suscripcion.js"
+import { Horarios } from "../pages/Horarios.js"
 import { Carousel } from "./Carousel.js"
 import { ChangeTheme } from "./ChangeTheme.js"
-import { DoorRender } from "./DoorRender.js"
+//import { DoorRender } from "./DoorRender.js"
 import { Form } from "./FormContact.js"
 import { IndiceScroll } from "./IndiceScroll.js"
 import { Navigation } from "./Navigation.js"
@@ -33,7 +33,7 @@ const Rooter = ()=>{
             if(mediaQueryM.matches){MenuMobile()} 
             ChangeTheme()
             Carousel()
-            DoorRender()
+            //DoorRender()
             IndiceScroll()
             Navigation()
  
@@ -47,16 +47,16 @@ const Rooter = ()=>{
                 if(mediaQueryM.matches){MenuMobile()} 
                 ChangeTheme()
                 Carousel()
-                DoorRender()
+                //DoorRender()
                 IndiceScroll()
                 Navigation()
      
             break;
 
-            case `#/Diseno-y-desarrollo`: 
+            case `#/suscripcion`: 
 
                 $main.innerHTML = ''
-                $main.appendChild(Webs())
+                $main.appendChild(Suscripcion())
                 if(mediaQuery.matches){$main.appendChild(SocialMedia());OnSocialMedia()}
                 if(mediaQueryM.matches){MenuMobile()} 
                 Navigation()
@@ -64,21 +64,21 @@ const Rooter = ()=>{
      
                 break;
     
-            case `#/Optimizacion`:
+            case `#/horarios`:
 
                 $main.innerHTML = ''
-                $main.appendChild(Optimization())
+                $main.appendChild(Horarios())
                 if(mediaQuery.matches){$main.appendChild(SocialMedia());OnSocialMedia()}
                 if(mediaQueryM.matches){MenuMobile()} 
                 Navigation()
          
                 break;
 
-            case `#/Contacto`:
+            case `#/blog`:
 
                 $main.innerHTML = ''
                     
-                $main.appendChild(Contacto())
+                $main.appendChild(Blog())
                 if(mediaQuery.matches){$main.appendChild(SocialMedia());OnSocialMedia()}
                 if(mediaQueryM.matches){MenuMobile()} 
                 Navigation()

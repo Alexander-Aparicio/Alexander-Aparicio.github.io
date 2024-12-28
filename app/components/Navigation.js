@@ -6,10 +6,10 @@ const Navigation = ()=>{
 
     d.addEventListener('click',(e)=>{
 
-        const $Seo = d.getElementById('optimization')
-        const $Disenoydesarrollo = d.getElementById('design')
+        const $Seo = d.getElementById('horarios')
+        const $Disenoydesarrollo = d.getElementById('suscripcion')
         const $home = d.getElementById('inicio')
-        const $Contact = d.getElementById('contact')
+        const $Contact = d.getElementById('blog')
 
         const closeMenuMobile = ()=>{
 
@@ -43,7 +43,7 @@ const Navigation = ()=>{
 
        if(e.target === $Seo){
 
-        window.location.hash = '#/Optimizacion'
+        window.location.hash = '#/horarios'
         addClass($Seo,'selectPage')
         removeClass($Contact,'selectPage')
         removeClass($Disenoydesarrollo,'selectPage')
@@ -53,7 +53,7 @@ const Navigation = ()=>{
        }
        if(e.target === $Disenoydesarrollo){
 
-        window.location.hash = '#/Diseno-y-desarrollo'
+        window.location.hash = '#/suscripcion'
         addClass($Disenoydesarrollo,'selectPage')
         removeClass($Contact,'selectPage')
         removeClass($Seo,'selectPage')
@@ -73,7 +73,7 @@ const Navigation = ()=>{
        }
        if(e.target === $Contact){
 
-        window.location.hash = '#/Contacto'
+        window.location.hash = '#/blog'
         addClass($Contact,'selectPage')
         removeClass($Seo,'selectPage')
         removeClass($Disenoydesarrollo,'selectPage')

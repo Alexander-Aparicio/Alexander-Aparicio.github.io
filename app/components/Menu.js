@@ -8,9 +8,9 @@ const Menu = ()=>{
 
     const menu = [
         {page:'Inicio', id:'inicio',clasStyle:'optionMenu'},
-        {page:'Páginas webs', id:'design',clasStyle:'optionMenu'},
-        {page:'Optimización', id:'optimization',clasStyle:'optionMenu'},
-        {page:'Contacto', id:'contact',clasStyle:'optionMenu'}
+        {page:'Horarios', id:'horarios',clasStyle:'optionMenu'},
+        {page:'Suscripción', id:'suscripcion',clasStyle:'optionMenu'},
+        {page:'Blog', id:'blog',clasStyle:'optionMenu'}
     ]
 
     const menuFragment = d.createDocumentFragment()

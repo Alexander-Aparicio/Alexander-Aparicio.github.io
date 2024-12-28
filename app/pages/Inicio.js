@@ -14,7 +14,7 @@ const Inicio = ()=>{
 
     const articleOne = artic('boxOne')
 
-    const SubtitleOne = SubTitlesOfPages('¿Necesitas una página web?','title h2')
+    const SubtitleOne = SubTitlesOfPages('¿Quiénes somos?','title h2')
 
     const pOne = parrafo(
         'p text',
@@ -22,16 +22,13 @@ const Inicio = ()=>{
     ) 
     
     const textPostOne = `
-    Conmigo podrás obtener eso y más...
+    Una academia de Tenis de mesa en Lima Norte.
     <br><br>
-    Es sencillo no solo nos interesa construir correctamente sitios web 
-    eso lo hace todo buen desarrollador, nosotros vamos más allá aplicando SEO 
-    y marketing en la creación de tu sitio web. Nos interesa que logres obtener éxito
-    para así presumir que contribuimos a ello.
+    Más que una simple academia, somos un espacio donde convergen jugadores de todos los niveles para disfrutar, aprender y compartir la emoción de este deporte. Nos enfocamos en crear un ambiente cálido y acogedor, donde la buena vibra y la camaradería son tan importantes como el entrenamiento. Con música que acompaña cada práctica y una decoración inspirada en los grandes del Tenis de mesa, buscamos ofrecer una experiencia única que te motive a dar lo mejor de ti en cada entrenamiento. Si eres un joven adulto, universitario o profesional que busca reconectar con su pasión por el tenis de mesa, ¡este es tu lugar!
     `
     pOne.innerHTML = textPostOne
 
-    const imgPost1 = image('desarrollo-web','app/assets/svg/tienda.svg','img')
+    const imgPost1 = image('desarrollo-web','app/assets/style-webs/20_academia.jpg','img')
 
     articleOne.appendChild(SubtitleOne)
     articleOne.appendChild(pOne)
@@ -40,20 +37,23 @@ const Inicio = ()=>{
 // ------------------------------------------------------------------------------------
 
     const articleTwo = artic('boxTwo')
-    const SubtitleTwo = SubTitlesOfPages('¿Qué genera nuestro SEO y marketing en tu web?','title h2')
+    const SubtitleTwo = SubTitlesOfPages('¿Qué ofrecemos?','title h2')
 
     const pPostTwo = parrafo('p text')
     
     const textPostTwo = `
-    Hace que tu página web pueda posicionarse más rápidamente que las webs de tu competencia 
-    en búscadores como Google, Firefox y Bing. Te ayudará a vender más y a fidelizar a tus clientes.
+    🎸Disfrutar de un ambiente único: Entrena con música que te motiva (Pop-Rock), en un espacio decorado que rinde homenaje a los grandes del tenis de mesa, creando una experiencia única y estimulante.
     <br><br>
-    Todo esto se lográ si partes con una estrategía desde el incio y por ello nosotros estamos para orientarte. 
+    😁Desconectar y divertirte: Olvídate del estrés diario y sumérgete en la emoción del juego, disfrutando de un espacio diseñado para el disfrute y la sana competencia.
+    <br><br>
+    🙆‍♀️Conectar con otros apasionados: Conoce a personas con tus mismos intereses, comparte tu amor por el tenis de mesa y crea nuevas amistades en un ambiente cálido y acogedor.
+    <br><br>
+    💪Progresión constante: Aprende y mejora de forma continua, con programas de entrenamiento adaptados a todos los niveles, desde principiantes hasta jugadores avanzados.
     `
 
     pPostTwo.innerHTML = textPostTwo
 
-    const imgPost2 = image('megafono','app/assets/svg/megafono.svg','img')
+    const imgPost2 = image('megafono','app/assets/style-webs/22_academia.jpg','img')
     
 
     articleTwo.appendChild(SubtitleTwo)
@@ -65,19 +65,24 @@ const Inicio = ()=>{
 // ------------------------------------------------------------------------------------
 
     const articleTwoN = artic('boxTwo')
-    const SubtitleTwoN = SubTitlesOfPages('¿Te conviene trabajar con nosotros?','title h2')
+    const SubtitleTwoN = SubTitlesOfPages('Suscripción y formas de Pago','title h2')
 
     const pPostTwoN = parrafo('p text')
 
     const textPostTwoN = `
-    Si eres un profesional independiente, alguién está emprendiendo un negocio o una PYME sin duda somos la mejor opción que podrás encontrar.
-    Nuestro principal objetivo es que logres tus primeros éxitos como empresa o profesional independiente.
+    La suscripción es mensual y ofrecemos dos tipos:
     <br><br>
-    Si ya eres un gran empresario tus necesidades son distintas y nosotros no nos estamos enfocamos en ello por ahora.
+    <strong>Básico:</strong> Cantidad definida de sesiones de entrenamiento dentro de un período de 30 días.
+    <br>
+    <strong>Premium:</strong> Lo básico con la capacidad de recuperar sesiones de entrenamientos hasta una semana cumplido el período de suscripción. 
+    <br><br>
+    Formas de pago aceptados: Tarjeta de Crédito, débito, transferencia, Yape y Plin.
+    <br><br>
+    Ingresa aquí para cotizar tu sucripción.
     `
     pPostTwoN.innerHTML = textPostTwoN
 
-    const imgPost2N = image('megafono','app/assets/svg/equipo.svg','img')
+    const imgPost2N = image('megafono','app/assets/svg/megafono.svg','img')
 
 
     articleTwoN.appendChild(SubtitleTwoN)
@@ -90,14 +95,15 @@ const Inicio = ()=>{
 
     const sectClientes = div('boxThree marginTop')
 
-    const h2 = SubTitlesOfPages('Ya estamos colaborando con:','h2 title')
+    const h2 = SubTitlesOfPages('Entrenadores :','h2 title')
 
     const boxLogos = div('boxCards')
 
     const logos = [
-        { logo:'app/assets/talleres-online-peru-logo.png', empresa:'talleresonlineperu' },
-        { logo:'app/assets/dioses-de-la-humanidad-logo.png', empresa:'diosesdelahumanidad' },
-        { logo:'app/assets/distinto-pe-logo.png', empresa:'distinto' }
+        { logo:'app/assets/style-webs/alex.jpg', empresa:'Alexander Aparicio' },
+        { logo:'app/assets/style-webs/Joel-Larico.png', empresa:'Joel Larico' },
+        { logo:'app/assets/style-webs/Miguel-Novoa.png', empresa:'Miguel Novoa' }
+        // { logo:'app/assets/distinto-pe-logo.png', empresa:'Mijael Llontop' }
     ]
 
     const fragmentLogos = document.createDocumentFragment()
@@ -126,9 +132,10 @@ const Inicio = ()=>{
     home.appendChild(Banner())
     home.appendChild(articleOne)
     home.appendChild(articleTwo)
-    home.appendChild(articleTwoN)
     home.appendChild(sectClientes)
     home.appendChild(BlogContent())
+    home.appendChild(articleTwoN)
+    
 // -------------------------------------------
 
     return home

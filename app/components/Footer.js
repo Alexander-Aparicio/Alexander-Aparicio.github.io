@@ -5,7 +5,7 @@ const Footer = ()=>{
     $footer.setAttribute('class','flex footer')
     const author = d.createElement('p')
     author.setAttribute('class','footerAuthor')
-    author.textContent = 'Roke Web 2021'
+    author.textContent = 'Academia Revolution 2025'
 
     $footer.appendChild(author)
 

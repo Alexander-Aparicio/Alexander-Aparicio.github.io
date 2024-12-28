@@ -16,9 +16,9 @@ const Header = ()=>{
 
    const card = figure('boxBranding')
 
-   const img = image('logo','app/assets/avatar.png')
+   const img = image('logo','app/assets/logo-tenis-de-mesa-revolution-grande.png')
 
-   const nameWeb = figc('ROKE WEB','nameWeb')
+   const nameWeb = figc('Academia Revolution','nameWeb')
 
    card.appendChild(img)
    card.appendChild(nameWeb)

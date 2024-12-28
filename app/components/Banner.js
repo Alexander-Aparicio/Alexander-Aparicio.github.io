@@ -8,11 +8,11 @@ const Banner = ()=>{
     const banner = artic('banner')
 
 // --------------------------------------------
-    const h1 = TitleOfPages('CREAMOS TU PÁGINA WEB','banner-h1')
+    const h1 = TitleOfPages('¡VAMOS A JUGAR 🏓!','banner-h1')
 
     const textBanner = div('banner-p')
 
-    const p1 = parrafo('p',`100% ¡Optimizado!`)
+    const p1 = parrafo('p',`❤️¡Vive el tenis de mesa!`)
 
     textBanner.appendChild(p1)
 // -------------------------------------------
@@ -32,16 +32,16 @@ const Banner = ()=>{
 
     const cards = [
 
-        {img:'app/assets/style-webs/app.png', name:'Tecnología'},
-        {img:'app/assets/style-webs/cafe.png', name:'Negocios'},
-        {img:'app/assets/style-webs/creative.png', name:'Juvenil'},
-        {img:'app/assets/style-webs/crypto.png', name:'Finanzas'},
-        {img:'app/assets/style-webs/mentor.png', name:'Profesionales'},
-        {img:'app/assets/style-webs/ong.png', name:'ONG'},
-        {img:'app/assets/style-webs/prime.png', name:'Ecommerce'},
-        {img:'app/assets/style-webs/seller.png', name:'Tienda'},
-        {img:'app/assets/style-webs/stream.png', name:'Stream'}
-
+        {img:'app/assets/style-webs/12_academia.jpg', name:'Amistosos'},
+        {img:'app/assets/style-webs/11_academia.jpg', name:'Entrenamientos'},
+        {img:'app/assets/style-webs/42_academia.jpg', name:'Horario de niños'},
+        {img:'app/assets/style-webs/21_academia.jpg', name:'Juego de Dobles'},
+        {img:'app/assets/style-webs/15_academia.jpg', name:'Rankings'},
+        {img:'app/assets/style-webs/30_academia.jpg', name:'Competencias externas'},
+        {img:'app/assets/style-webs/43_academia.jpg', name:'Momentos de compartir'},
+        {img:'app/assets/style-webs/46_academia.jpg', name:'Participación en torneos'},
+        {img:'app/assets/style-webs/4_academia.jpg', name:'Celebraciones'},
+        {img:'app/assets/style-webs/38_academia.jpg', name:'Aniversario'}
     ]
 
     const fragment = d.createDocumentFragment()

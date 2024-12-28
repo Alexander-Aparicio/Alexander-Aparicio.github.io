@@ -1,14 +1,14 @@
 import { div, figc, figure, image } from "../components/helpers/Boxes.js"
 import { TitleOfPages } from "../components/helpers/Titles.js"
 
-const Contacto = ()=>{
+const Blog = ()=>{
 
     const d = document
     const contacto = d.createElement('article')
     contacto.setAttribute('class','contactoPage')
 // -------------------------------------------------------
 
-    const title = TitleOfPages('Formas de contactarme')
+    const title = TitleOfPages('Registrate y comunícate con nosotros')
 
     contacto.appendChild(title)
 
@@ -16,6 +16,12 @@ const Contacto = ()=>{
 
     const boxContent = div('boxContacto')
 
+    boxContent.innerHTML = `
+<iframe height='500px' width='100%' frameborder='0' allowTransparency='true' scrolling='auto' src='https://creatorapp.zohopublic.com/revolutionsports/academia/form-embed/Inscripciones_Taller_de_Verano/NRxauHWe4Wp1F32akyfMxTKpsE41uyX3J49b4Dh11s2qpOTOAgQObuBw9t4GebMxdDeVgGmxYPsHSUnWEHhmJCPUHjCW9gNaE9H2'></iframe>
+    `
+
+
+{/* <iframe height='1000px' width='100%' frameborder='0' allowTransparency='true' scrolling='auto' src='https://creatorapp.zohopublic.com/revolutionsports/academia/page-embed/Inscripci_n_Taller_de_Verano_2025/sC7yE2sFBskJvm7MmnRSH2NTwxDwT1AWMkgYhSBh1zDBB1QCfKUC9uUCpNRmhaJp1XShGvVWyzXBP73vv6hr3wA2CKhnuUbhO8VP'></iframe> */}
     // ----------------------------------
 
     const form = d.createElement('form')
@@ -123,7 +129,7 @@ const Contacto = ()=>{
     form.innerHTML = formContent
 
     // ----------------------------------
-    boxContent.appendChild(form)
+    //boxContent.appendChild(form)
 
 // -------------------------------------------------------
 
@@ -183,9 +189,9 @@ const Contacto = ()=>{
 // --------------------------------------------------------------
 
     contacto.appendChild(boxContent)
-    contacto.appendChild(boxInfo)
+    //contacto.appendChild(boxInfo)
 
     return contacto
 }
 
-export { Contacto }
+export { Blog }

@@ -9,9 +9,9 @@ const SocialMedia = ()=>{
 
     const socialNetworks = [
 
-        {redSocial:'Facebook', id:'https://www.facebook.com/rokeweb/'},
-        {redSocial:'Instagram', id:'https://www.instagram.com/rokeweb_peru/'},
-        {redSocial:'Whatsapp', id:'https://api.whatsapp.com/send?phone=51924998093'}
+        {redSocial:'Facebook', id:'https://www.facebook.com/tenisdemesa.rs/'},
+        {redSocial:'Instagram', id:'https://www.instagram.com/revolution_tenisdemesa/'},
+        {redSocial:'Whatsapp', id:'https://api.whatsapp.com/send?phone=51957731940'}
 
     ]
 
